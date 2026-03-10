@@ -1,0 +1,43 @@
+{
+  "kind": {
+    "esm_kind": [
+      "\u8fd9\u4e2a\u8868\u683c\u662fESM\u7684\u6a21\u578b\u540d\u5b57,\u53ef\u4ee5\u81ea\u5df1\u9009\u62e9",
+      "esm2_t6_8M_UR50D",
+      "esm2_t12_35M_UR50D",
+      "esm2_t30_150M_UR50D",
+      "esm2_t33_650M_UR50D",
+      "esm2_t36_3B_UR50D",
+      "esm2_t48_15B_UR50D"
+    ]
+  },
+  "model": {
+    "esm_model_path": "facebook/esm2_t36_3B_UR50D",
+    "local_model_path": "/public/home/lingwang/wow/ft/esm_model/esm2_t36_3B_UR50D",
+    "hidden_dropout": 0.4,
+    "num_classes": 1,
+    "task_type": "regression",
+    "task_name": "Dist2NBS_distance_prediction"
+  },
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "target_modules": [
+      "key",
+      "value"
+    ],
+    "lora_dropout": 0.3,
+    "bias": "none"
+  },
+  "training": {
+    "doc": "Dist2NBS\u9884\u8bad\u7ec3\u53c2\u6570",
+    "max_length": 512,
+    "default_epochs": 10,
+    "default_batch_size": 4,
+    "default_lr": 0.0001,
+    "loss_function": "MSE",
+    "output_range": [
+      0,
+      1
+    ]
+  }
+}

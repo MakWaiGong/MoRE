@@ -1,0 +1,17 @@
+PPB预训练参数配置
+==================================================
+任务类型: PPB (Protein-Peptide Binding)
+数据路径: /public/home/lingwang/MoRE/Pretrain/src/../data/PPB.csv
+输出路径: /public/home/lingwang/MoRE/Pretrain/lora/PPB
+配置文件: /public/home/lingwang/MoRE/Pretrain/src/pretrain_config.json
+训练轮数: 10
+批次大小: 4
+学习率: 0.0001
+设备: cuda
+最大长度: 1024
+早停patience: 3
+最大训练轮数: 10
+验证集比例: 5%
+随机种子: 42
+==================================================
+训练开始时间: 2025-12-13 15:21:07.269277

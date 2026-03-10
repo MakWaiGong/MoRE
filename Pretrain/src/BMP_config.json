@@ -1,0 +1,39 @@
+{
+    "kind":{
+        "esm_kind": [
+            "这个表格是ESM的模型名字,可以自己选择",
+            "esm2_t6_8M_UR50D",
+            "esm2_t12_35M_UR50D",
+            "esm2_t30_150M_UR50D",
+            "esm2_t33_650M_UR50D",
+            "esm2_t36_3B_UR50D",
+            "esm2_t48_15B_UR50D"
+        ]
+    },
+    
+    "model": {
+        "esm_model_path": "facebook/esm2_t36_3B_UR50D",
+        "local_model_path": "/public/home/lingwang/wow/ft/esm_model/esm2_t36_3B_UR50D",
+        "num_classes": 22,
+        "hidden_dropout": 0.4,
+        "task_type": "masked_language_model",
+        "task_name": "BMP_masked_protein_prediction"
+    },
+    "lora": {
+        "r": 8,
+        "lora_alpha": 16,
+        "target_modules": ["key", "value"],
+        "lora_dropout": 0.3,
+        "bias": "none"
+    },
+    "training": {
+        "doc": "BMP预训练参数",
+        "max_length": 1024,
+        "default_epochs": 5,
+        "default_batch_size": 8,
+        "default_lr": 1e-3,
+        "loss_function": "CrossEntropy",
+        "vocab_size": 22,
+        "mask_ratio": 0.50
+    }
+}
