@@ -25,6 +25,8 @@ conda activate more
 pip install -r requirements.txt
 ```
 
+The code has been developed and tested on  CentOS Linux 7/8.
+
 ## Usage
 
 This repository provides three main scripts for training, validation, and testing:
@@ -35,10 +37,18 @@ This repository provides three main scripts for training, validation, and testin
 
 For detailed usage instructions, see [docs/usage.md](docs/usage.md).
 
-## Pre-training 
 
-## Fine-tuning 
+## Hardware requirements
+Due to the computational complexity of the model, running the full dataset requires a dedicated GPU to accelerate training/inference.
 
-## Prediction
+- Minimum requirements:
+    * CPU: 8 cores or higher
+    * RAM: 32+ GB
+    * GPU: An NVIDIA GPU with at least 40 GB of VRAM
+
+- Hardware used for testing: The results presented in the manuscript were generated with the following specifications:
+    * Intel Xeon Platinum 8358P×2
+    * NVIDIA A800
+
 
 ## Citation
