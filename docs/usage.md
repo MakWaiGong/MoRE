@@ -163,6 +163,7 @@ python val.py \
 ## Testing (`test.py`)
 
 The testing script loads a trained model and evaluates it on one or more test datasets. It automatically generates ROC/PR curves and AUC variance estimates for each test set.
+It will take around 10 minutes
 
 ### Basic Usage
 
