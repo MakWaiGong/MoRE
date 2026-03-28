@@ -17,7 +17,7 @@ transformers==4.52.3
 peft==0.15.2
 ```
 
-We provide Conda and pip configurations for easy environment reproduction. To set up the Conda environment, run the following commands sequentially：
+We provide Conda and pip configurations for easy environment reproduction. To set up the Conda environment(which typically takes around 10 minutes), run the following commands sequentially:
 
 ```bash
 conda env create -f more.yaml -n more
